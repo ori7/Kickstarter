@@ -1,0 +1,17 @@
+<h2>Kickstarter</h2>
+
+<fieldset>
+  <legend>Add project</legend>
+  <label>
+    <input #pn type="text" placeholder="Project name">
+  </label>
+  <label>
+    <textarea #pd type="text" placeholder="Project describtion"></textarea>
+  </label>
+  <label>
+    <input #pg type="text" placeholder="Project goal">
+  </label>
+  <button (click) = 'add(pn.value, pd.value, pg.value)'>Add project</button>
+</fieldset>
+
+<app-project *ngFor='let pro of projects' [project]='pro'></app-project>
