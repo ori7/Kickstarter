@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from './project/models/project.model';
+import { ProjectService } from './servises/project.service';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,13 @@ import { Project } from './project/models/project.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+
+  constructor(private projectService:ProjectService) { 
+
+  }
+  
   projects:Project[];
+  
   ngOnInit(): void {
   this.projects = [
     {

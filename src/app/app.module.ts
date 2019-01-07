@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ProjectComponent } from './project/project.component';
+import { ProjectService } from './servises/project.service';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { ProjectComponent } from './project/project.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
