@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ProjectComponent } from './project/project.component';
-import { ProjectService } from './servises/project.service';
+import { ProjectService } from './services/project.service';
 
 @NgModule({
   declarations: [
